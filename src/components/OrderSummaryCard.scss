@@ -1,0 +1,113 @@
+$order-summary-bg: #f9f9f9;
+$blue-color: #1e72b6;  
+$text-color: #333;
+$gray-color: #666; 
+$btn-color: #1e72b6;
+$card-padding: 20px;
+
+.order-summary-container {
+  background-image: url('../images/pattern-background-desktop.svg');
+  background-size: cover;
+  background-position: bottom;
+}
+
+.order-summary-card {
+  background-color: $order-summary-bg;
+  border-radius: 10px;
+  padding: $card-padding;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;  
+
+  .order-summary-header {
+    margin-bottom: 20px;
+  }
+
+  .order-summary-illustration {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .order-summary-body {
+    text-align: center;  
+  }
+
+  .order-summary-description {
+    font-size: 16px;
+    color: $gray-color; 
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+
+  .order-summary-details {
+    margin-bottom: 20px;
+    
+    .order-item {
+      display: flex;
+      justify-content: center;  
+      align-items: center;
+      margin-bottom: 12px;
+      font-size: 18px;
+
+      .item-name {
+        color: $text-color;
+      }
+
+      .item-price {
+        color: $gray-color;  
+        margin-left: 10px;
+      }
+
+      .music-icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+      }
+    }
+
+    .change-plan-btn {
+      font-size: 14px;
+      color: $blue-color; 
+      text-decoration: underline; 
+      padding: 0;
+      text-align: right;
+      margin-top: -10px;
+    }
+  }
+
+  .order-summary-buttons {
+    .proceed-btn {
+      background-color: $btn-color;
+      border-color: $btn-color;
+      margin-bottom: 10px;
+      &:hover {
+        background-color: darken($btn-color, 10%);
+        border-color: darken($btn-color, 10%);
+      }
+    }
+
+    .cancel-btn {
+      background-color: #ccc;
+      border-color: #ccc;
+      &:hover {
+        background-color: darken(#ccc, 10%);
+        border-color: darken(#ccc, 10%);
+      }
+    }
+  }
+}
+
+// Responsive Design for Mobile
+@media (max-width: 768px) {
+  .order-summary-container {
+    background-image: url('../images/pattern-background-mobile.svg');
+  }
+
+  .order-summary-card {
+    padding: 15px;
+  }
+
+  .order-summary-description {
+    font-size: 14px;
+  }
+
+}
