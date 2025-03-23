@@ -24,8 +24,8 @@ const OrderSummaryCard = () => {
             </p>
 
             <div className="order-summary-details">
-              <div className="order-item">
-                <img src={musicIcon} alt="Music Icon" className="music-icon" />
+              <img src={musicIcon} alt="Music Icon" className="music-icon" /> 
+              <div className="order-item">                
                 <span className="item-name">Annual Plan</span>
                 <span className="item-price">$59.99/year</span>
               </div>
