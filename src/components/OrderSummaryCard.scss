@@ -39,33 +39,41 @@ $card-padding: 20px;
   }
 
   .order-summary-details {
+    background-color: #edeef6;
+    border-radius: 10px;
     margin-bottom: 20px;
+    display: flex;  
+    align-items: center;
+    padding: 8px;
+    font-size: 14px;
     
+    .music-icon {
+      width: 30px;
+      height: 30px;
+      padding-left: 8px;
+    }
+
     .order-item {
       display: flex;
-      justify-content: center;  
-      align-items: center;
-      margin-bottom: 12px;
-      font-size: 18px;
+      flex-direction: column;
+      margin-left: 30px;
+      flex: 1;
+      text-align: left;
 
       .item-name {
         color: $text-color;
+        font-weight: 500;
+        margin-bottom: 5px;
       }
 
       .item-price {
         color: $gray-color;  
-        margin-left: 10px;
-      }
-
-      .music-icon {
-        width: 30px;
-        height: 30px;
-        margin-right: 10px;
       }
     }
 
     .change-plan-btn {
       font-size: 14px;
+      font-weight: bold;
       color: $blue-color; 
       text-decoration: underline; 
       padding: 0;
@@ -91,6 +99,7 @@ $card-padding: 20px;
       &:hover {
         background-color: darken(#ccc, 10%);
         border-color: darken(#ccc, 10%);
+        color: #fff;
       }
     }
   }
